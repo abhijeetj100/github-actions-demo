@@ -32,7 +32,6 @@ jobs:
         uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      # - name: Setup Node.js environment
       - name: Setting up node env v14
         uses: actions/setup-node@v2.5.1
         with:
@@ -45,7 +44,6 @@ jobs:
       - name: Build Project
         run: yarn build
 
-      # - name: Save build artifacts
       - name: Saving the build artifacts
         uses: actions/upload-artifact@v2.3.1
         with:
