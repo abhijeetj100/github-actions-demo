@@ -49,3 +49,6 @@ jobs:
         with:
           name: ${{matrix.os}}-${{matrix.python}}-build
           path: dist
+      
+      - name: Serve Project
+        run: yarn serve
